@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header class="encriptador">
+        <img class="encriptador__logo" src="./assets/logo.png" alt="Logo de Alura">
+        <h1 class="encriptador__titulo">Encriptador y Desencriptador de Texto</h1>
+    </header>
+    <main class="encriptador__contenido">
+        <section class="encriptador__contenido__entrada">
+            <textarea type="text" class="encriptador__texto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador__advertencia">
+                <img src="./assets/exclamacion.png" alt="Advertencia">
+                <p>Solo letras Minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador__botones">
+                <button type="button" onclick="encriptar();" class="encriptador__botones__encriptar">Encriptar</button>
+                <button type="button" onclick="desencriptar();" class="encriptador__botones__desencriptar">Desencriptar</button>
+            </div> 
+        </section>
+        <section class="encriptador__contenido__salida">
+            <img class="encriptador__contenido__salida__imagen" src="./assets/busqueda-de-mensaje.png" alt="Imagen de Mensaje no Encontrado">
+            <p class="encriptador__contenido__salida__mensaje1"><strong>Ningún mensaje fue encontrado</strong></p>
+            <p class="encriptador__contenido__salida__mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </section>
+    </main>
+    <script src="app.js"></script>
+    <footer class="footer">
+        <p>Desarrollado por Álvaro Hernández</p>
+    </footer>
+</body>
+</html>
